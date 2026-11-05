@@ -20,9 +20,13 @@ All settings are in `config.lua`. Restart the resource after changing anything (
 | Option | Type | Default | Description |
 
 | `Config.Enabled` |  `true` | Master switch. If `false`, the script starts with idle cam blocking turned off. Can be changed in game with the toggle command. |
+
 | `Config.Interval` |  `20000` | How often the idle timers are reset. Must stay under 30000 (the game triggers the idle cam after about 30 seconds). Lower values are safer but slightly less efficient. 10000 to 20000 is recommended. |
+
 | `Config.OnFoot` |  `true` | Blocks the idle camera while the player is on foot. |
+
 | `Config.InVehicle` |  `true` | Blocks the idle camera while the player is in a vehicle. |
+
 | `Config.AllowToggleCommand` |  `true` | Registers the `/idlecam` command so players can toggle blocking on or off in game. Set to `false` to remove the command. |
 
 ## Usage
